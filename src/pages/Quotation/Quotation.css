@@ -1,0 +1,25 @@
+@media print {
+  @page {
+    margin: 0px;
+  }
+
+  @page :first {
+    margin-top: 0;
+  }
+
+  @page {
+    margin-top: 20px;
+  }
+
+  .no-top-margin {
+    margin-top: 0 !important;
+  }
+
+  .invoicePrintWrap {
+    page-break-after: always;
+  }
+
+  .invoicePrintWrap:not(:first-of-type) {
+    margin-top: 20px;
+  }
+}

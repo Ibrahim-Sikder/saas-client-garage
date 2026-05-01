@@ -1,0 +1,8 @@
+
+.expenseForm label{
+    display: block;
+}
+.expenseForm input{
+border:1px solid red;
+} 
+

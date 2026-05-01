@@ -1,0 +1,13 @@
+.printBtnGroup {
+	margin-left: 507px;
+    margin-top: 20px;
+
+}
+.printBtnGroup button {
+	background: #42A1DA;
+	width: 90px;
+	height: 30px;
+	color: #fff;
+	margin-right: 5px;
+	border-radius: 15px;
+}

@@ -1,0 +1,35 @@
+export const tagTypesList = [
+  "customer",
+  "company",
+  "showroom",
+  "jobCard",
+  "quotation",
+  "invoice",
+  "vehicle",
+  "supplier",
+  "employee",
+  "attendance",
+  "expense",
+  "income",
+  "moneyReceipt",
+  "bill-pay",
+  "purchase",
+  "unit",
+  "category",
+  "products",
+  "productType",
+  "barcode",
+  'stocks',
+  'stock-transactions',
+  'purchaseReturn',
+  'purchaseOrder',
+  'warranty',
+  'warehouse',
+  'tenant',
+  'page',
+  'role',
+
+
+
+
+];

@@ -1,0 +1,132 @@
+.invoice-card {
+  background: linear-gradient(to bottom, #4581f9, #80aafb);
+  border-radius: 15px;
+  padding: 15px;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  height: 170px;
+}
+
+.icon-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.icon {
+  font-size: 30px;
+  color: white;
+}
+
+.invoice-info {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* .amount {
+  font-size: 32px;
+  font-weight: bold;
+} */
+
+.label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.wave-background {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.wave-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.invoice-card:nth-child(2) {
+  background: linear-gradient(to bottom, #00bc8a, #54d2b1);
+}
+
+.invoice-card:nth-child(3) {
+  background: linear-gradient(to bottom, #00bc8a, #4247ce);
+}
+
+.invoice-card:nth-child(4) {
+  background: linear-gradient(to bottom, #8d7cfc, #b8affe);
+}
+
+
+.dashboardCardIconWrap:nth-child(3) {
+  background: #05a182;
+}
+
+.invoice-card2 {
+  background: linear-gradient(to bottom, #9f11aa, #f7a90027);
+}
+
+.invoice-card2:nth-child(2) {
+  background: linear-gradient(to bottom, #05a905, #246c05);
+  
+}
+
+.invoice-card2:nth-child(3) {
+  
+  background: linear-gradient(to bottom, #17c6f1, #4247ce);
+}
+
+.invoice-card2:nth-child(4) {
+  background: linear-gradient(to bottom, red, #f7a90088);
+}
+
+.dashboardCardIconWrap,
+.dashboardCardIconWrap2,
+.dashboardCardIconWrap3,
+.dashboardCardIconWrap4,
+.dashboardCardIconWrap5,
+.dashboardCardIconWrap6,
+.dashboardCardIconWrap7 {
+  background: #3d71d6;
+  border-radius: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.dashboardCardIconWrap2 {
+  background: #06a182;
+}
+
+.dashboardCardIconWrap3 {
+  background: #d09f0b;
+}
+
+.dashboardCardIconWrap4 {
+  background: #776ee2;
+}
+
+.dashboardCardIconWrap5 {
+  background: #c3d00b7e;
+}
+
+.dashboardCardIconWrap6 {
+  background: #ff7f17e0;
+}
+
+.dashboardCardIconWrap7 {
+  background: #BF5EB9;
+}

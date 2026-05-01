@@ -1,0 +1,481 @@
+.containerWrap {
+	width: 1200px;
+
+}
+
+.bar {
+	display: block;
+	width: 32px;
+	height: 3px;
+	margin: 7px;
+	transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	background: white !important;
+}
+
+.bar:nth-child(2) {
+	width: 16px !important
+}
+
+.activeToggle .bar:nth-child(2) {
+	opacity: 0;
+
+}
+
+.activeToggle .bar:nth-child(1) {
+	transform: translateY(8px) rotate(44deg) !important;
+	-webkit-transform: translateY(8px) rotate(45deg);
+	-moz-transform: translateY(8px) rotate(45deg);
+	-ms-transform: translateY(8px) rotate(45deg);
+	-o-transform: translateY(8px) rotate(45deg);
+	margin-top: 6px;
+}
+
+.activeToggle .bar:nth-child(3) {
+	transform: translateY(-8px) rotate(-45deg);
+	-webkit-transform: translateY(-8px) rotate(-45deg);
+	-moz-transform: translateY(-8px) rotate(-45deg);
+	-ms-transform: translateY(-8px) rotate(-45deg);
+	-o-transform: translateY(-8px) rotate(-45deg);
+	margin-top: -5px;
+}
+
+.navActive,
+.activeToggle {
+	position: fixed;
+
+	left: 3px;
+	padding: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	width: 43px;
+	transition: all .5s cubic-bezier(0.55, 0.54, 0.68, 0.63);
+	cursor: pointer;
+}
+
+.navActive {
+	left: 10px;
+	z-index: 999999 !important;
+}
+
+.activeToggle {
+	position: fixed;
+	left: 10px;
+	transition: all .5s cubic-bezier(0.55, 0.54, 0.68, 0.63);
+}
+
+.activeRightSideBarWrap {
+	width: 70px;
+	background: #2c3136;
+	height: 100% !important;
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	transition: all .5s cubic-bezier(0.55, 0.54, 0.68, 0.63);
+	padding-top: 25px;
+}
+
+.rightSideBarWrap {
+	display: none;
+	transition: all .5s cubic-bezier(0.55, 0.54, 0.68, 0.63);
+}
+
+.toolTipWrap {
+	position: relative;
+}
+
+.toolTip {
+	position: absolute;
+	left: 57px;
+	z-index: 999999999 !important;
+	background: #2c3136;
+	width: 119px;
+	border-radius: 3px;
+	color: #fff;
+	top: 4px;
+	padding: 5px;
+	display: none;
+}
+
+.toolTipWrap:hover .toolTip {
+	display: block;
+}
+
+.tooltipIcon {
+	font-size: 25px !important;
+	color: #fff !important;
+	cursor: pointer;
+}
+
+.dashboardAccordion {
+	background: #2c3136 !important;
+	color: #fff !important;
+	transition: all 500s ease-in-out; 
+}
+
+.dashboardAccordion:hover {
+	background: #fff !important;
+	color: black !important;
+}
+
+.accordionTypoGrapy {
+	padding-left: 10px;
+	padding-bottom: 6px !important;
+	font-size: 14px !important;
+	transition: all .5s ease-in-out;
+}
+
+.accordionTypoGrapy:hover {
+	/* background:#42A1DA !important; */
+	color: #111;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	/* padding-left: 10px; */
+
+}
+
+.dashboardIcon {
+	margin-right: 5px;
+	font-size: 20px !important;
+}
+
+.dashboardItems {
+	/* padding-left: 16px;
+	margin-bottom: 5px; */
+	/* margin-top: 5px; */
+	transition: all .5s ease-in-out;
+	font-size: 14px;
+}
+
+.dashboardItems:hover {
+	background: #fff;
+	padding: 5px;
+	padding-left: 10px;
+	width: 100%;
+	color: black !important;
+}
+
+.active {
+	position: relative;
+	z-index: 999;
+	color: #42a1da;
+}
+
+.scrollBtn {
+	display: none;
+}
+
+.scrollToTopBtn {
+	width: 40px;
+	height: 40px;
+	background: #42A1DA;
+	color: white;
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	z-index: 9999 !important;
+	border-radius: 100%;
+	display: grid;
+	place-items: center;
+	transition: all .5s ease;
+	animation-delay: .5s;
+
+}
+
+.scrollToTopBtn .scrollBtn {
+	display: block !important;
+}
+
+.accordionExpandIcon {
+	color: #fff !important;
+	transition: all .5s ease-in-out;
+}
+
+.dashboardAccordion:hover .accordionExpandIcon {
+	color: black !important;
+}
+
+.dashboardSearchBar {
+	width: 250px;
+	background: #42a0da59;
+	height: 35px;
+	display: flex;
+	align-items: center;
+	border-radius: 20px;
+	overflow: hidden;
+	justify-content: space-between;
+	padding-right: 10px;
+	border: 1px solid #ddd;
+}
+
+.dashboardSearchBar input {
+	height: 100%;
+	background-color: transparent;
+	padding-left: 10px;
+}
+
+.dashboardSearchBar input::placeholder {
+	color: #fff;
+}
+
+.notificationIcon {
+	font-size: 30px !important;
+}
+
+.adminProfile {
+	position: absolute;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	padding: 10px;
+	border-radius: 3px;
+	top: 30px;
+	left: 45px;
+	width: 100px;
+	background: #fff;
+	color: black;
+	opacity: 0;
+	transition: all .5s cubic-bezier(0.55, 0.54, 0.68, 0.63);
+	transform: scaleY(0);
+	transform-origin: top;
+	visibility: hidden;
+
+}
+
+.adminProfileWrap {
+	position: relative;
+	cursor: pointer;
+}
+
+.adminProfileWrap:hover .adminProfile {
+	opacity: 1;
+	transform: scaleY(1);
+	visibility: visible;
+}
+
+.accordionTypoGrapy:hover {
+	background: #2C3136;
+	/* padding-left: 50px; */
+	color: #fff !important;
+}
+
+.notificationModal,
+.messageModal {
+	background: #fff;
+	width: 300px;
+	height: 450px;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	padding: 20px;
+	border-radius: 10px;
+	position: absolute;
+	top: 30px;
+	right: 0px;
+	transform: translateY(0);
+	transform-origin: top;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.notificationMessage {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px dashed #ddd;
+	padding: 5px 0;
+
+}
+
+.notificationIconsWraps:hover .notificationModal {
+	transform: translateY(1);
+	visibility: visible;
+	opacity: 1;
+}
+
+.messageIconsWraps:hover .messageModal {
+	transform: translateY(1);
+	visibility: visible;
+	opacity: 1;
+}
+	.activeDrawer {
+		padding-top:80px;
+	}
+
+@media only screen and (min-width: 1441px) {
+	.activeDrawer {
+		width: 93%;
+	}
+
+	.dashboardAccordion {
+		width: 270px !important;
+	}
+}
+@media only screen and (max-width:1500px) {
+
+	.activeDrawer {
+        width: 90%;
+    }
+	.earningCardWrap {
+        width: 100%;
+    }
+	.drawwerLeftSide, .activeSideBar {
+		width: 18% !important;
+		
+	}
+  }
+  
+
+@media only screen and (max-width: 1440px) {
+	.activeDrawer {
+		width: 88.7%;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+
+	.activeDrawer {
+		width: 98%;
+		padding: 20px 0px;
+	}
+
+	.completedServiceCards {
+		width: 235px;
+		padding: 20px 5px;
+	}
+
+	.activeRightSideBarWrap {
+		width: 60px;
+	}
+
+	.activeRightSideBarWrap {
+		display: none;
+	}
+
+
+	/* .activeDrawer {
+		width: 98%;
+	} */
+	.drawwerLeftSide,
+	.activeSideBar {
+		width: 20% !important;
+	}
+
+	.dashboardAccordion {
+		width: 100% !important;
+		background: black;
+	}
+}
+
+@media only screen and (max-width:768px) {
+
+	.drawwerLeftSide,
+	.activeSideBar {
+		background: black;
+		width: 30% !important;
+	}
+
+	.dashboardSearchBar {
+		width: 230px;
+
+		font-size: 14px;
+
+	}
+
+	.navActive {
+		left: 0px;
+	}
+
+	.adminProfileWrap {
+		right: 10px;
+	}
+
+	.activeToggle .bar:nth-child(3) {
+		margin-top: -4px;
+	}
+
+}
+
+@media only screen and (max-width: 500px) {
+
+	/* .bar {
+		width: 23px;
+		height: 2px;
+		margin: 4px;
+		margin-left: 0px;
+	} */
+	.navActive,
+	.activeToggle {
+		width: 32px;
+	}
+
+	.activeDrawer {
+		width: 95%;
+	}
+
+	.drawwerLeftSide,
+	.activeSideBar {
+		width: 50% !important;
+		background: #2C3136;
+		z-index: 99999999;
+	}
+
+
+	.activeToggle .bar:nth-child(3) {
+		margin-top: -4px;
+
+	}
+
+	.adminProfileWrap {
+		right: -20px;
+	}
+
+
+}
+
+@media only screen and (max-width: 376px) {
+	.adminProfileWrap {
+		right: -187px;
+	}
+
+	.drawwerLeftSide {
+		width: 70% !important;
+	}
+
+	.adminProfileWrap {
+		right: -20px;
+	}
+
+	.activeToggle {
+		left: 11px;
+	}
+
+	.activeDrawer {
+		width: 100%;
+	}
+
+	
+	.drawer-content {
+		right: 0px !important;
+	}
+
+
+}
+
+@media only screen and (max-width:300px) {
+
+
+	.adminProfileWrap {
+		right: -24px;
+	}
+
+
+}
+
+@media only screen and (max-width:260px) {
+
+
+	.adminProfileWrap {
+		right: -26px;
+	}
+
+}

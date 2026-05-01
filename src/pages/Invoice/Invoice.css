@@ -1,0 +1,563 @@
+.invoicePrintWrap {
+  background-color: #ddd;
+  padding: 50px 0;
+
+}
+
+.invoiceHead {
+  width: 782px;
+  margin-left: 20px;
+}
+
+.invoicePrint {
+  width: 8.27in;
+  margin: 0 auto;
+  background-color: #fff;
+  min-height: 11in;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 15px;
+  height: 100%;
+}
+
+.invoiceHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+
+.customerInfoWrapss {
+  width: 714px;
+
+
+}
+
+
+
+
+
+.SearchBtn {
+  width: 100px;
+  height: 40px;
+  background: #42a1da;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.searcList select {
+  border: 1px solid #42a1da;
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.discountFieldWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.discountFieldWrap input,
+.discountFieldWrap span {
+  border: 1px solid #ddd;
+  margin-bottom: 7px;
+  height: 45px;
+  border-radius: 5px;
+  padding-left: 5px;
+  width: 148px;
+}
+
+.discountFieldWrap span {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.addInvoiceItem {
+  position: relative;
+  left: -97%;
+}
+
+.buttonGroup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.buttonGroup button,
+.buttonGroup a {
+  background: #42a1da;
+  color: #fff;
+  margin-right: 5px;
+  padding: 5px 10px;
+  height: 40px;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.buttonGroup button:hover {
+  background-color: #42a1da;
+}
+
+
+.submitQutationBtn button {
+  background: #42a1da;
+  color: white;
+  width: 150px;
+  height: 46px;
+  border-radius: 4px;
+}
+
+.invoiceCard {
+  text-align: center !important;
+  width: 15rem !important;
+  margin: 28px auto;
+}
+
+.qoutationTitle {
+  font-size: 36px !important;
+}
+
+.text-left {
+  font-size: 12px;
+}
+
+.invoiceTable2 {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.invoiceTable2 td {
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.invoicTable td,
+.invoicTable th,
+.invoicTable tr,
+.invoiceTable2 td,
+.invoiceTable2 th,
+.invoiceTable2 tr {
+  text-align: center;
+  font-size: 10px !important;
+}
+
+.invoicTable td,
+.invoicTable tr,
+.invoiceTable2 td,
+.invoiceTable2 tr {
+  border: 1px solid #c0c2c1;
+}
+
+.invoiceTable2 th {
+  background: #4670a1c0;
+  color: #fff;
+}
+
+
+
+
+.printInvoiceBtnGroup button {
+  background: #42a1da;
+  color: #fff;
+  border-radius: 20px;
+  margin-right: 5px;
+  width: 69px;
+  height: 30px;
+  font-size: 14px;
+}
+
+.customerSignatureWrap,
+.customerSignatureWrap2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+  margin-top: 25px;
+}
+
+.customerSignatur {
+  position: relative;
+  bottom: 0;
+}
+
+.customerSignatur::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 0;
+  background: black;
+  left: 0;
+}
+
+
+
+
+.specificWidth {
+  width: 130px !important
+}
+
+@media only screen and (min-width: 1440px) {
+  .labelWrap label {
+    display: block;
+    position: absolute;
+  }
+
+  .printInvoiceBtnGroup {
+  margin-left: 491px;
+  margin-top: 30px;
+}
+
+
+}
+
+
+@media only screen and (max-width: 1440px) {
+  .addInvoiceItem {
+
+    left: -96%;
+  }
+
+  
+
+
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+  .invoiceHead {
+    width: 100%;
+  }
+
+  .addInvoiceItem {
+    left: -95%;
+  }
+
+  .trustAuto {
+    font-size: 50px;
+  }
+
+  .invoicForm input {
+    width: 182px;
+  }
+
+  .qutationForm {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+
+  .labelWrap label {
+    font-size: 12px;
+  }
+
+  .labelWrap label:nth-child(5) {
+    left: 14px !important;
+  }
+
+  .labelWrap label:nth-child(4) {
+    left: 52px !important;
+  }
+
+  .labelWrap label:nth-child(3) {
+    left: 133px !important;
+  }
+
+  .labelWrap label:nth-child(2) {
+    left: -37px !important;
+  }
+
+  .labelWrap label:nth-child(1) {
+    left: 20px !important;
+
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .qutationForm {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .addInvoiceItem {
+    left: -93%;
+  }
+
+  .trustAuto {
+    font-size: 30px;
+    margin-left: 0px;
+  }
+
+  .discountFieldWrap input {
+    width: 118px;
+  }
+
+  .discountFieldWrap b {
+    font-size: 12px;
+  }
+
+  .labelWrap label {
+    display: none;
+  }
+
+
+  .invoiceHeader {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .trustAuto {
+    font-size: 25px;
+  }
+
+  .qutationForm {
+    justify-content: center;
+  }
+
+  .invoicForm input {
+    width: 300px;
+  }
+
+
+  .invoicForm input {
+    width: 300px;
+  }
+
+  .removeBtn {
+    position: relative;
+    top: 262px;
+  }
+
+
+
+  .vehicleCard {
+    margin-right: 0px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+
+
+
+  .hideAmountText {
+    display: none;
+  }
+
+  .buttonMargin {
+    margin-top: 70px;
+  }
+
+  .removeBtn {
+    position: relative;
+    top: 519px;
+  }
+
+
+
+  .discountFieldWrap {
+    margin-right: 17px;
+  }
+
+  .discountFieldWrap input,
+  .discountFieldWrap span {
+    width: 118px;
+  }
+
+  .qutationForm {
+    margin-top: -78px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+
+
+
+  .buttonGroup {
+    display: block;
+  }
+
+  .removeBtn {
+    right: -64px;
+  }
+
+
+  .buttonMargin {
+    position: relative;
+    right: -44px;
+  }
+
+  .SearchBtn {
+    width: 81px;
+    height: 37px;
+  }
+
+}
+
+@media only screen and (max-width:250px) {
+
+
+  .removeBtn {
+    right: -19px;
+  }
+
+}
+
+
+
+.invoicTable td,
+.invoicTable th,
+.invoicTable tr,
+.invoiceTable2 td,
+.invoiceTable2 th,
+.invoiceTable2 tr,
+.invoiceTable2 th,
+.invoiceTable2 td {
+  padding: 3px !important;
+  margin: 0 !important;
+  font-size: 12px !important;
+  text-align: center !important;
+}
+
+.invoiceCustomerInfo small,
+.invoiceCustomerInfo b,
+.netTotalAmounts b,
+.netTotalAmounts small {
+  display: block;
+  font-size: 9px;
+}
+
+.netTotalAmounts b,
+.netTotalAmounts small {
+  font-size: 12px;
+}
+
+.invoiceLine {
+  width: 1px;
+  height: 80px;
+  background: black;
+}
+
+.invoiceTable2 th:first-child {
+  width: 50px !important;
+}
+
+.invoiceTable2 th:nth-child(3) {
+  width: 60px !important;
+}
+
+.invoiceTable2 th:nth-child(4) {
+  width: 72px !important;
+}
+
+.invoiceTable2 th:nth-child(5) {
+  width: 70px !important;
+}
+
+.invoiceTable2 th:nth-child(2) {
+  width: 100%;
+}
+
+.flex.netTotalAmounts {
+  width: 172px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 5px;
+}
+
+.invoiceInformaiton {
+  width: 90% !important;
+  margin: 0 auto;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  body {
+    background: #fff !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+
+  .invoicePrintWrap,
+  .invoicePrintWrap * {
+    visibility: visible;
+  }
+
+  .invoicePrintWrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .invoicePrint {
+    width: 210mm !important;  
+    min-height: 297mm !important; 
+    margin: 0 auto !important;
+    background: #fff !important;
+    box-shadow: none !important;
+    padding: 10mm !important;
+
+  }
+
+
+  .buttonGroup,
+  .printInvoiceBtnGroup,
+  .SearchBtn,
+  .submitQutationBtn {
+    display: none !important;
+  }
+
+
+  .invoiceTable2,
+  .invoicTable {
+    width: 100% !important;
+    border-collapse: collapse !important;
+  }
+
+  .invoiceTable2 th,
+  .invoiceTable2 td,
+  .invoicTable th,
+  .invoicTable td {
+    border: 1px solid #000 !important;
+    padding: 4px !important;
+    margin: 0 !important;
+    font-size: 11px !important;
+    text-align: center !important;
+    word-wrap: break-word !important;
+    white-space: normal !important;
+  }
+
+  .invoiceTable2 th {
+    background: #4670a1c0 !important;
+    color: #fff !important;
+    -webkit-print-color-adjust: exact;
+  }
+
+  /* Fix header */
+  .invoiceHeader {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    flex-direction: row !important;
+  }
+}
+

@@ -1,0 +1,226 @@
+.employeeCard,
+.presentCard {
+  width: 324px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  padding: 10px;
+  text-align: center;
+}
+.presentCard {
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  margin: 0 auto;
+}
+.employeeCardImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.employeeCard2 {
+  padding: 20px 0;
+}
+
+/* Employee.css */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+th,
+td {
+  padding: 20px;
+  text-align: center;
+  white-space: nowrap;
+}
+th {
+  padding: 30px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.even-row {
+  background-color: #f2f2f2;
+}
+
+.odd-row {
+  background-color: #fff;
+}
+
+.table-container {
+  overflow-x: auto;
+  max-width: 100%;
+  text-align: center;
+}
+
+.leaveTable tbody tr:nth-child(odd) {
+  background-color: #f0f0f0;
+}
+
+.leaveTable tbody tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+/* Center align content */
+.leaveTable td .leaveTable th {
+  text-align: center;
+}
+
+.employeeProfileCard {
+  /* width: 570px !important; */
+  width: auto;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.attendanceIcon {
+  margin: 0 auto;
+  width: 50px;
+}
+
+.overTimeCard {
+  width: 244px !important;
+  height: 130px;
+  border-radius: 11px;
+}
+.overtimeRow {
+  background: #fff !important;
+}
+
+.salaryTable input {
+  width: 120px;
+  height: 42px;
+  padding-left: 5px;
+}
+.deleteButton {
+  background-color: transparent;
+  border: none;
+  color: #ff0000;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.deleteButton:hover {
+  transform: scale(1.1);
+}
+@media screen and (min-width: 1405px) {
+  .employeeCard,
+  .presentCard {
+    width: 324px;
+  }
+}
+
+.profileCards{
+  height:210px;
+
+}
+@media screen and (min-width: 1100px) and (max-width: 1500px) {
+  .employeeCard,
+  .presentCard {
+    width: 100%;
+  }
+
+}
+@media screen and (min-width: 1100px) and (max-width: 1440px) {
+  .employeeCard,
+  .presentCard {
+    width: 257px;
+  }
+
+}
+
+
+
+
+@media only screen and (max-width: 1200px) {
+  table {
+    max-width: 100%; 
+  }
+  .employeeProfileCard {
+    width: 100%;
+  }
+  .employeeCard,
+  .presentCard {
+    width: 100%;
+    text-align: center;
+  }
+  .employeeCard, .presentCard {
+    width: 100% !important;
+}
+.profileCards {
+  height: auto;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .employeeProfileCard {
+    width: 100%;
+}
+.profileCardsWraps{
+  font-size: 10px;
+}
+
+}
+
+/* Employee.css - Additional styles */
+.profileCardsWraps {
+  transition: all 0.3s ease;
+}
+
+.employeeCard {
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Animation for profile image */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(66, 161, 218, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(66, 161, 218, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(66, 161, 218, 0);
+  }
+}
+
+.profile-image-pulse {
+  animation: pulse 2s infinite;
+}
+
+/* Custom scrollbar for the tabs content */
+.MuiBox-root::-webkit-scrollbar {
+  width: 6px;
+}
+
+.MuiBox-root::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.MuiBox-root::-webkit-scrollbar-thumb {
+  background: #42a1da;
+  border-radius: 10px;
+}
+
+.MuiBox-root::-webkit-scrollbar-thumb:hover {
+  background: #f77f00;
+}
+
+/* Tab styles */
+.employee-tabs {
+  padding: 10px 16px 0;
+}
+

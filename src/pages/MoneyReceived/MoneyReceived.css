@@ -1,0 +1,524 @@
+.moneyReceivedWrap {
+  padding: 10px 50px;
+}
+
+.moneyReceptWrap {
+  padding: 20px;
+  border: 1px solid #11111183;
+  margin: 30px auto;
+  border-radius: 5px;
+  width: 1300px;
+
+}
+
+.viewMoneyReceiptWrap {
+  background-color: #dddddd;
+  padding: 30px 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.moneyFormWrap {
+  border: 1px solid black;
+  border-radius: 3px;
+  width: 800px;
+  margin: 0 auto;
+  padding: 30px 10px;
+  background: #fff;
+}
+
+.logoWrap {
+  width: 175px;
+}
+
+.logoWrap2 {
+  height: auto;
+}
+
+.tkText {
+  width: 104px;
+}
+
+.logoWrap img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.moneyHead {
+  width: 570px;
+  text-align: center;
+  color: #0950a1;
+}
+
+.moneyHead2 {
+  width: 600px;
+}
+
+.moneyHead2 span {
+  font-size: 11px !important;
+}
+
+.hotlineIcon {
+  margin-right: 5px;
+  color: #0950a1 !important;
+  font-size: 14px !important;
+}
+
+.receivedBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.receivedBtn button {
+  background: #82017f;
+  color: #fff;
+  width: 200px;
+  height: 35px;
+  border-radius: 20px;
+  margin-top: 5px;
+}
+
+.receivedTitle {
+  font-size: 45px;
+  font-weight: bold;
+  color: #4671A1;
+}
+
+.receivedTitle2 {
+  font-size: 38px;
+  font-family: "Merriweather", serif;
+}
+
+.moneyHead span {
+  line-height: 14px;
+  display: block;
+  width: 377px;
+  margin: 0px auto;
+  margin-top: 3px;
+  font-size: 10px !important;
+}
+
+.receivedField {
+  width: 100%;
+}
+
+.receivedField b {
+  font-style: italic;
+}
+
+.receivedField span {
+  width: 100%;
+  border-bottom: 1px dashed;
+  border-color: #81027e;
+  font-size: 11px;
+}
+
+
+.payAdvance {
+  width: 100%;
+}
+
+.receivedMoneyText2 {
+  width: 207px;
+
+}
+
+.allInputWraps label {
+  font-size: 11px;
+}
+
+.advance2 {
+  width: 223px;
+}
+
+.againstBillText {
+  width: 308px;
+}
+
+.payAdvance {
+  display: flex;
+  align-items: center;
+}
+
+.vehicleText {
+  width: 122px;
+}
+
+.vehicleText2 {
+  width: 81px;
+}
+
+
+.date {
+  width: 38px;
+  font-style: italic;
+  margin-left: 12px;
+}
+
+.date2 {
+  width: 40px;
+}
+
+.backText {
+  width: 56px;
+}
+
+.backText2 {
+  width: 39px;
+}
+
+.advanceText {
+  display: block;
+  width: 100px;
+}
+
+.amount,
+.amount2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.totalAmountText {
+  width: 98px;
+}
+
+.remainingText {
+  width: 100px;
+}
+
+.totalAmountText2 {
+  width: 140px;
+}
+
+.amount2 label,
+.amount label,
+.wordTaka label,
+.receivedField label {
+  font-style: italic;
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.amount input {
+
+  border-radius: 3px;
+  border-bottom: 1px dashed;
+  font-size: 10px;
+}
+
+.amount2 input {
+  width: 100%;
+}
+
+.wordTaka input {
+  border-bottom: 1px dashed;
+  width: 400px;
+}
+
+.signature,
+.customerSignature b {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  font-style: italic;
+}
+
+.signature:after,
+.customerSignature b:after {
+  position: absolute;
+  content: "";
+  width: 134px;
+  height: 1px;
+  background-color: #82017f;
+}
+
+.customerSignature b:after {
+  width: 170px;
+}
+
+.moneyViewInputField {
+  border: 1px solid black !important;
+  border-radius: 3px;
+  background: #d9d9d9;
+  margin-right: 5px;
+  height: 38px;
+  padding-left: 5px;
+  width: 100%;
+}
+
+.receiptMoneyWrap {
+  background-color: #ddd;
+  padding-bottom: 30px;
+}
+
+
+
+.moneyReceiptBtnGroup button {
+  width: 85px;
+  background: #82017f;
+  margin-right: 5px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 14px;
+  height: 30px;
+}
+
+.allInputWraps input {
+  background: transparent;
+}
+
+.hotlineWrap small {
+  font-size: 11px;
+}
+
+.amountTextBG {
+  width: 100% !important;
+  margin-right: 5px;
+  border-radius: 3px;
+}
+
+.moneyReceiptAmount input {
+  border: none !important;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.wordInTk {
+  width: 90%;
+}
+
+.receivedBtn2 button {
+  width: 156px;
+  height: 30px;
+  font-size: 14px;
+  background: #82017f;
+  color: #fff;
+  border-radius: 20px;
+  margin: 0 auto;
+  text-align: center;
+  display: grid;
+  place-content: center;
+  place-items: center;
+}
+
+.moneyReceiptBtnGroup {
+  margin-left: 507px;
+}
+
+
+.totalAmountInput {
+  width: 295px !important;
+}
+
+.totalAmountInput,
+.receiptInput,
+.advanceInput,
+.cashInput,
+.bankInput {
+  display: block;
+}
+
+.receiptInput {
+  width: 1030px;
+  display: block;
+
+}
+
+.advanceInput {
+  width: 434px;
+}
+
+.cashInput {
+  width: 332px;
+}
+
+.checqueText {
+  width: 187px;
+}
+
+.bankInput {
+  width: 560px;
+}
+
+.vehicleText {
+  width: 92px;
+}
+
+.receivedMoneyText {
+  width: 219px;
+}
+
+.accountNumber,
+.paymentDate,
+.cash_by,
+.rocketNumber {
+  width: 72px;
+  display: block;
+  font-size: 11px;
+}
+
+.rocketNumber {
+  width: 93px
+}
+
+.chas_by {
+  width: 52px;
+  display: block;
+  font-size: 11px;
+
+}
+
+.paymentDate {
+  width: 117px;
+  margin-left: 10px;
+}
+
+.transactionId {
+  width: 87px;
+  display: block;
+}
+
+.addPaymentDate {
+  width: 127px;
+  margin-left: 20px;
+
+}
+
+.paymentText {
+  width: 119px;
+}
+
+.paidText {
+  width: 60px;
+}
+
+.bankName {
+  width: 75px;
+  display: block;
+}
+
+.checkDate {
+  width: 104px;
+  display: block;
+}
+
+
+@media only screen and (max-width: 1440px) {}
+
+@media only screen and (max-width: 1024px) {
+  .receiptInput {
+    width: 800px;
+  }
+
+  .moneyReceptWrap {
+    width: 100%;
+  }
+
+  .moneyHead {
+    width: 432px;
+  }
+
+  .receivedTitle {
+    font-size: 35px;
+  }
+
+  .moneyReceivedWrap {
+    padding: 10px 5px;
+  }
+
+  .payAdvance {
+    align-items: baseline;
+  }
+
+  .advanceInput {
+    width: 100%;
+  }
+
+  .amount input {
+    width: 100%;
+  }
+
+  .receivedMoneyText {
+    width: 297px;
+  }
+
+
+  .date2 {
+    width: 38px;
+    margin-left: 15px;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  /* .advance {
+    width: 351px;
+  } */
+
+  .receiptInput {
+    width: 100%;
+  }
+
+  .amount input {
+    width: 100%;
+  }
+
+  .receivedTitle {
+    font-size: 27px;
+  }
+
+  .moneyHead span {
+    font-size: 12px;
+  }
+
+  .moneyHead {
+    margin: 0 10px;
+  }
+
+  .moneyFormWrap {
+    margin-left: 23px;
+  }
+
+  .logoWrap {
+    width: 149px;
+  }
+
+  .receivedField {
+    display: block;
+  }
+
+
+}
+
+@media only screen and (max-width: 500px) {
+
+  .amount,
+  .amount2 {
+    flex-wrap: wrap;
+    row-gap: 5px;
+  }
+
+  .wordTaka input,
+  .cashInput,
+  .advanceInput,
+  .bankInput,
+  .totalAmountInput {
+    width: 100% !important;
+  }
+
+  .logoWrap {
+    display: none;
+  }
+
+  .receivedTitle {
+    font-size: 25px;
+  }
+
+  .moneyHead {
+    width: 100%;
+  }
+
+}

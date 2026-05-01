@@ -1,0 +1,288 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btnPurple {
+  @apply bg-red-400 text-white font-bold;
+}
+
+@layer base {
+  h1 {
+    @apply text-3xl font-semibold;
+  }
+
+  h2 {
+    @apply text-2xl font-semibold;
+  }
+}
+
+.drawerflex {
+  width: 100% !important;
+  display: flex;
+  justify-content: space-between;
+}
+
+.drawwerLeftSide,
+.activeSideBar {
+  width: 15% !important;
+  transition: all 0.5s cubic-bezier(0.55, 0.54, 0.68, 0.63);
+}
+
+.sideBarActive {
+  width: 0% !important;
+  transition: all 0.5s cubic-bezier(0.55, 0.54, 0.68, 0.63);
+}
+
+.drawer-content {
+  position: absolute !important;
+  right: 0px !important;
+  width: 86%;
+  transition: all 0.5s cubic-bezier(0.55, 0.54, 0.68, 0.63);
+    padding-top:100px
+}
+
+.activeDrawer {
+  width: 92%;
+  position: absolute !important;
+  right: 31px !important;
+  transition: all 0.5s cubic-bezier(0.55, 0.54, 0.68, 0.63);
+}
+
+.menu :where(li:not(.menu-title) > *:not(ul):not(details):not(.menu-title)),
+.menu :where(li:not(.menu-title) > details > summary:not(.menu-title)) {
+  padding-left: 0rem !important;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0rem !important;
+}
+
+table {
+  width: 100%;
+}
+
+.table :where(thead, tfoot) {
+  white-space: pre-wrap;
+  font-size: 0.7rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+  color: hsl(var(--bc) / 0.6);
+}
+
+.table :where(th, td) {
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  vertical-align: middle;
+  white-space: pre-wrap;
+}
+
+.table :where(td) {
+  border-right: 1px solid #ddd;
+  text-align: center;
+  font-size: 12px;
+}
+
+.table :where(td):nth-last-of-type() {
+  border-bottom: 3px solid #ddd !important;
+}
+
+.table :where(th) {
+  border: 1px solid #fff;
+  text-align: center;
+  background: #42a1da;
+  font-size: 14px;
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
+
+.table tr:hover {
+  background: #11e43438;
+  color: black;
+}
+
+.table {
+  width: 100%;
+  text-align: left;
+  font-size: 0.6em;
+  line-height: 1.75rem;
+  border-radius: var(--rounded-box, 1rem);
+}
+
+.ql-container.ql-snow {
+  border: none !important;
+}
+
+select:focus,
+input:focus {
+  outline: none;
+}
+
+.sectionMargin {
+  margin-top: 80px;
+}
+
+.profitCard {
+  width: 430px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.drawer-content .profitCard {
+  width: 395px;
+  margin-bottom: 10px;
+}
+
+/* width of the scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+/* handle hover effect */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+/* table responsive custome css */
+.tableContainer {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.customTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.customTable thead {
+  background: #42a1da;
+  color: #fff;
+}
+
+.customTable th {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.customTable td {
+  font-size: 16px;
+}
+
+.customTable td,
+.customTable th {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+/* ------------------- Responsive Fixes ------------------- */
+/* Mobile (max 768px) */
+@media (max-width: 768px) {
+
+  .customTable th,
+  .customTable td {
+    font-size: 12px;
+  }
+
+  .drawwerLeftSide,
+  .activeSideBar {
+    width: 65% !important;
+  }
+
+  .activeToggle {
+    left: auto;
+    right: 12px;
+  }
+
+  .activeDrawer,
+  .drawer-content {
+    width: 95% !important;
+    right: 0 !important;
+  }
+}
+
+/* Tablet (769px – 1024px) */
+
+@media (max-width: 1024px) {
+
+  .drawwerLeftSide,
+  .activeSideBar {
+    width: 40% !important;
+  }
+
+  .activeDrawer,
+  .drawer-content {
+    /* width: 92% !important; */
+    right: 8px !important;
+  }
+}
+
+/* Desktop (1025px – 1440px) */
+@media (max-width: 1440px) {
+
+  .drawwerLeftSide,
+  .activeSideBar {
+    width: 20% !important;
+  }
+}
+
+/* Large Desktop (1441px and up) */
+@media only screen and (min-width: 1441px) {
+  .recentCard {
+    width: 966px;
+  }
+
+  .drawer-content .recentCard {
+    width: 885px;
+  }
+
+  .earningCardWrap {
+    width: 639px;
+  }
+
+  .drawer-content .earningCardWrap {
+    width: 580px;
+  }
+}
+
+/* Ultra-wide screens */
+@media only screen and (max-width: 1500px) {
+  .activeDrawer {
+    width: 90%;
+  }
+}
+
+/* Extra Small (max 500px) */
+@media only screen and (max-width: 500px) {
+  .css-19kzrtu {
+    padding: 0px !important;
+  }
+
+  .customerProfileWrap span,
+  .customerProfileWrap div,
+  .customerProfileWrap b {
+    font-size: 10px;
+  }
+
+  .recentJobs {
+    width: auto;
+  }
+
+  .cardIcon {
+    padding: 1px !important;
+    width: 33px !important;
+  }
+}

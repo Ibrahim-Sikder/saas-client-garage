@@ -1,0 +1,321 @@
+.searchInptu {
+  width: 400px !important;
+}
+
+.searchBtn {
+  height: 48px;
+  width: 100px;
+  background: #42a1da;
+  border-radius: 5px;
+  margin-left: 5px;
+  color: #fff;
+}
+
+.chart {
+  display: flex;
+  align-items: center;
+  justify-content: center !important;
+
+  flex-wrap: wrap;
+}
+
+.pieChart {
+  margin-top: -87px;
+}
+
+.centerText {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.completedServiceCards {
+  width: 100%;
+  padding: 50px 20px;
+  transition: all 0.5s cubic-bezier(0.51, 0.48, 0.66, 0.6);
+
+}
+
+.completedServiceCards:hover {
+  background: #42a1da; 
+  color: black;
+  cursor: pointer;
+}
+
+.dashboardCard {
+  box-shadow: rgba(149, 157, 165, 0.25) 0px 8px 24px;
+  padding: 20px;
+  width: 230px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 3px;
+  height: 200px;
+  transition: all 0.5s cubic-bezier(0.51, 0.48, 0.66, 0.6);
+  background: #2DCE89;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.dashboardCard:hover {
+  background: #42a1da;
+  color: #fff;
+  cursor: pointer;
+}
+
+.dashboardIconWrap {
+  display: flex;
+  justify-content: center;
+  padding: 4px;
+  background: #fff;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  transition: all 0.5s cubic-bezier(0.51, 0.48, 0.66, 0.6);
+}
+
+.dashboardIcon {
+  color: #2DCE89;
+  scale: 1;
+  transition: all 0.5s cubic-bezier(0.51, 0.48, 0.66, 0.6);
+  overflow: hidden;
+}
+
+.dashboardCard:hover .dashboardIconWrap {
+  background: #fff;
+  color: #42a1da;
+}
+
+.dashboardCard:hover .dashboardIcon {
+  color: #42a1da;
+  scale: 1.2;
+}
+
+.earningCardWrap {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 20px;
+}
+
+.earningCard {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  height: 140px;
+}
+
+.task {
+  border: 1px solid #ddd;
+  padding: 10px;
+  width: 250px;
+  text-align: center;
+}
+
+.absentCard {
+  border: 1px solid #ddd;
+  padding: 10px 20px;
+}
+
+.userImgWrap {
+  width: 50px;
+  height: 50px;
+  background: #ddd;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.monthlyTitle {
+  margin-right: 250px;
+}
+
+.recentCard {
+  border: 1px solid #ddd;
+  padding-top: 10px;
+  border-radius: 5px;
+}
+
+.recentCard th {
+  border: none;
+}
+
+.recentCard th,
+.recentCard td {
+  padding: 10px;
+  text-align: left;
+}
+
+
+@media only screen and (min-width: 1441px) {
+  .earningCard {
+    width: 100%;
+  }
+
+  .dashboardCardIcon {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width:1500px) {
+
+  .dashboardCard,
+  .earningCard {
+    width: 100%;
+  }
+
+}
+
+
+
+@media only screen and (max-width: 1440px) {
+  .dashboardCardIcon {
+    font-size: 30px;
+  }
+
+  .completedServiceCards {
+    width: 290px;
+    padding: 40px 20px;
+  }
+
+  .earningCardWrap {
+    width: 500px;
+  }
+
+  .earningCard {
+    /* width: 180px; */
+  }
+
+  .recentCard {
+    width: 680px;
+  }
+
+  .dashboardCard {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .profitCard {
+    width: 483px;
+    margin: 9px;
+  }
+
+  .pieChart {
+    margin-top: 0px;
+  }
+
+  .recentCard,
+  .earningCardWrap {
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  .earningCard {
+    width: 235px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .monthlyTitle {
+    margin-right: 0;
+  }
+
+  .dashboardCard {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .ourDashboard {
+    display: block;
+  }
+
+  .chart {
+    display: block;
+    padding: 0px 100px;
+  }
+
+  .downWrap {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    margin: 10px auto;
+  }
+
+  .pieChart {
+    text-align: center;
+    justify-content: center;
+    display: block;
+    margin-left: 40px;
+  }
+
+  .chart {
+    text-align: center;
+    justify-content: center;
+    display: grid;
+    place-items: center;
+  }
+
+  .recentCard,
+  .earningCardWrap {
+    width: 100%;
+  }
+
+  .dashboardCard {
+    width: 100%;
+  }
+
+  .completedServiceCards {
+    width: 98% !important;
+    padding: 35px 15px !important;
+  }
+
+  .profitCard {
+    margin: 5px auto;
+  }
+
+  .dashboardIconWrap {
+    width: 64px;
+    height: 64px;
+  }
+
+  .profitCard {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+  .completedServiceCards,
+  .dashboardCard,
+  .earningCard {
+    width: 100%;
+  }
+
+  .dashboardCardIcon {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .chart {
+    display: block;
+    padding: 0px 50px;
+  }
+
+  .barChart {
+    padding: 0px 50px;
+    margin-left: -138px;
+  }
+
+  .pieChart {
+    margin-left: -57px;
+  }
+
+  .dashboardCard {
+    width: 100%;
+  }
+}

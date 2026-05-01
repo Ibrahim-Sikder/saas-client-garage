@@ -1,0 +1,32 @@
+.role :where(input, select) {
+	border: 1px solid #42a1da;
+	width: 100%;
+	border-radius: 20px;
+	padding: 10px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+.role {
+	display: flex;
+	width: 80%;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+.rolebtnWrap {
+	text-align: center;
+}
+.rolebtnWrap button {
+	background: #42a1da;
+	color: #fff;
+	border-radius: 20px;
+	width: 190px;
+	height: 40px;
+	margin-top: 50px;
+}
+
+@media only screen and (max-width:768px){
+	.role {
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+}

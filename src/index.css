@@ -1,0 +1,82 @@
+@import url(./style/style.css);
+@import "./style/CardStyle.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+
+}
+
+.qutationForm {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+  align-items: center;
+}
+
+.inputField {
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.quotationSelect select {
+  border-top-right-radius: 4px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+
+}
+
+.quotationSelect input {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+
+}
+
+@media (max-width: 768px) {
+  .qutationForm {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+
+
+
+.cardIcon {
+  @apply w-12 h-12 bg-blue-500 rounded-lg flex flex-col items-center justify-center text-white mr-3 flex-shrink-0;
+}
+
+.recentJobs {
+  @apply text-sm font-medium text-gray-700 min-w-[100px];
+}
+
+.customerProfileWrap {
+  @apply space-y-6;
+}
+
+@media (max-width: 768px) {
+  .customerProfileWrap {
+    @apply space-y-4;
+  }
+  
+  .cardIcon {
+    @apply w-10 h-10;
+  }
+}
+
+

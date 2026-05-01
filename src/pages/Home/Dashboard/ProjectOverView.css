@@ -1,0 +1,49 @@
+/* ProjectOverView.css */
+.dashboardCard {
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dashboardCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.dashboardIconWrap {
+  width: 80px;
+  height: 80px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.dashboardIcon {
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.dashboardCard:hover .dashboardIconWrap {
+  transform: scale(1.1);
+}
+
+.dashboardCard:hover .dashboardIcon {
+  transform: scale(1.1);
+}
+
+/* Ensure text visibility on colored backgrounds */
+.dashboardCard h2,
+.dashboardCard span {
+  color: white;
+}

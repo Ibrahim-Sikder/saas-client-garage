@@ -1,0 +1,440 @@
+.addJobCardWraps {
+  width: 100%;
+  /* padding: 25px 20px; */
+  overflow: hidden;
+}
+.jobCardFormWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.5rem;
+}
+.jobCardFormWrap input:focus,
+.jobCardSingleForm input:focus,
+.vehicleTextField textarea,
+.vehicleReportLeftSide textarea {
+  outline: none;
+}
+.addJobCardHeads {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.trustAuto {
+  font-family: "Merriweather", serif;
+  word-spacing: 12px;
+  letter-spacing: 3px;
+  font-size: 68px;
+  margin-left: 20px;
+  color: #11054e;
+}
+
+.jobCardSingleForm {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.jobCardSingleForm input {
+  border: 1px solid #111;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.vehicleCard,
+.vehicleCard2 {
+  box-shadow: #42a1da 0px 3px 2px 3px;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 8px;
+  width: 20rem;
+  text-align: center;
+  margin: 25px auto;
+}
+.vehicleCard2 {
+  width: 18rem;
+  font-size: 1.5rem;
+}
+.vehicleTextField textarea,
+.vehicleReportLeftSide textarea,
+.vehicleReportRightSide textarea {
+  width: 100%;
+  resize: none;
+  border: 1px solid #111;
+  height: 180px;
+  border-radius: 10px;
+  margin-top: 5px;
+  padding: 10px;
+}
+.vehicleReportLeftSide textarea {
+  height: 228px;
+}
+.vehicleReport {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.vehicleReportLeftSide {
+  width: 50%;
+  padding-right: 20px;
+}
+.vehicleReportRightSide {
+  width: 50%;
+  position: relative;
+}
+.vehicleReportRightSide textarea {
+  height: 100px;
+}
+.imgWrap {
+  border: 1px solid #111;
+  padding: 15px;
+  height: 650px;
+  border-radius: 5px;
+  width: 100%;
+  object-fit: cover;
+}
+.imgWrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.requiredStart {
+  color: red;
+}
+.inputSelectWrap select {
+  border: none;
+  border-right: 1px solid #111;
+  border-radius: 0%;
+  width: 6rem !important;
+}
+.table :where(th, tr, td) {
+  text-align: center;
+}
+.signature b {
+  position: relative;
+}
+.signature b::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: black;
+  left: 0;
+  top: 0;
+}
+.addInvoic button {
+  width: 153px;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 1px solid #42a1da;
+  transition: all 0.5s ease-in-out;
+}
+.addInvoic button:hover {
+  background-color: #42a1da;
+  color: #fff;
+}
+.textEditor {
+  border: 1px solid black;
+  height: 200px;
+  border-radius: 10px;
+}
+.textEditor:nth-child(2),
+.textEditor:nth-child(3) {
+  height: 274px;
+}
+.qutationForm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.qutationForm input, .qutationForm select {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px 5px;
+}
+.invoicForm input {
+  width: 280px;
+}
+
+.qutationForm input:focus {
+  outline: none;
+}
+.orderNumber {
+  width: 130px !important;
+}
+.labelWrap label {
+  position: relative;
+  left: -65px;
+  font-weight: bold;
+}
+
+.hideBorder {
+  border: none;
+}
+.hideBorder2 {
+  border-left: none;
+  border-bottom: none;
+}
+.searchGroup input:focus {
+  outline: none;
+}
+.searchGroup {
+  display: flex;
+}
+.searchGroup input {
+  border: 1px solid #42a1da;
+  padding: 5px;
+  border-radius: 5px;
+}
+.interiorList {
+  list-style: number;
+  padding-left: 25px;
+}
+.updateJobCardBtn {
+  display: flex;
+  justify-content: center;
+  margin-top: 33px;
+}
+.legend {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.legend ol li {
+  list-style-type: number;
+  font-size: 14px;
+}
+
+
+
+.topSearchBar {
+  width: 200px !important;
+  height: 20px !important;
+}
+
+.addJobLogoImg {
+  width: 210px;
+}
+
+.addJobBtn {
+  width: 400px;
+  background: #42a1da;
+  height: 60px;
+  color: #fff;
+  text-align: center;
+  margin: 0px auto;
+  display: grid;
+  place-content: center;
+  border-radius: 5px;
+  font-size: 20px;
+}
+.addCustomerRelative {
+  position: relative;
+  cursor: pointer;
+  z-index: 99;
+}
+.addCustomerDropDown {
+  position: absolute;
+  top: 41px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: all 0.5s ease-in-out;
+  background: #fff;
+  color: #111;
+}
+.addCustomerRelative:hover .addCustomerDropDown {
+  transform: scaleY(1);
+}
+
+
+
+
+.options-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 98%;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 999;
+  border-radius: 3px;
+  color: black;
+  position: absolute;
+  top: 47px;
+  cursor: pointer;
+  }
+  
+  .options-list li {
+    padding: 8px 10px;
+    cursor: pointer;
+  }
+  
+  .options-list li:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+
+
+@media only screen and (min-width: 1441px) {
+  .vehicleInputs {
+    width: 638px !important;
+  }
+
+ 
+}
+
+@media only screen and (max-width: 1440px) {
+  .vehicleInputs {
+    width: 310px !important;
+  }
+
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .jobCardSingleForm label {
+    font-size: 12px;
+  }
+  .vehicleCard {
+    font-size: 21px;
+    width: 15rem;
+  }
+  .addJobLogoImg {
+    width: 152px;
+  }
+
+  .jobCardSingleForm input {
+    width: 100% !important;
+  }
+  .trustAuto {
+    font-size: 52px;
+  }
+
+  .imgWrap {
+    height: 617px;
+    margin-top: 36px;
+  }
+
+  .vehicleReportRightSide textarea {
+    height: 119px;
+  }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .addJobLogoImg {
+    width: 130px;
+  }
+
+  .trustAuto {
+    font-size: 30px;
+    margin-left: 0px;
+  }
+  .qutationForm {
+    justify-content: left;
+  }
+  .vehicleCard,
+  .vehicleCard2 {
+    font-size: 19px;
+    width: 12rem;
+  }
+
+  .buttonGroup button {
+    margin-bottom: 8px;
+  }
+  .buttonGroup {
+    align-items: normal;
+  }
+  .SearchBtn {
+    width: 65px;
+    font-size: 13px;
+  }
+  .jobCardSingleForm label {
+    font-size: 11px;
+  }
+
+
+
+  .addJobCardWraps {
+    width: 100%;
+    padding: 0px 0px;
+  }
+
+  .vehicleReport {
+    flex-wrap: wrap;
+  }
+  .vehicleReportLeftSide,
+  .vehicleReportRightSide {
+    width: 100%;
+    padding-right: 0px;
+  }
+
+
+  .imgWrap {
+    height: 300px;
+  }
+
+  
+}
+
+@media only screen and (max-width: 500px) {
+  .trustAutoTitle {
+    font-size: 22px !important;
+  }
+
+  .addJobLogoImg {
+    display: none;
+  }
+  .vehicleCard {
+    font-size: 15px;
+    width: 11rem;
+  }
+  .ownerInput {
+    width: 358px !important;
+    margin-bottom: 10px !important;
+    margin: 0 auto;
+  }
+
+  .searchGroup input,
+  .addJobBtn {
+    width: 100%;
+  }
+ 
+}
+
+@media only screen and (max-width: 375px) {
+  .ownerInput {
+    width: 250px !important;
+  }
+}
+@media only screen and (max-width: 275px) {
+  .ownerInput {
+    width: 200px !important;
+  }
+}
+
+/* CSS for responsive table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
